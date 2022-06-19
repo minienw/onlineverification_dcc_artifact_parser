@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+                <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+          </PropertyGroup>
+
+
+    <ItemGroup>
+        <None Remove="001 - Page.bmp" />
+        <None Remove="002 - Page.bmp" />
+        <None Remove="003 - Page.bmp" />
+        <None Remove="004 - Page.bmp" />
+        <None Remove="005 - Page.bmp" />
+        <None Remove="006 - Page.bmp" />
+        <None Remove="007 - Page.bmp" />
+        <None Remove="008 - Page.bmp" />
+        <None Remove="009 - Page.bmp" />
+        <None Remove="010 - Page.bmp" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+    <PackageReference Include="NCrunch.Framework" Version="4.7.0.4" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.1.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <PackageReference Include="DtronixPdf" Version="1.0.1.1" />
+    <PackageReference Include="PDFiumCore" Version="102.0.4997" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.0" />
+    <PackageReference Include="SkiaSharp" Version="2.80.3" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.80.3" />
+      <PackageReference Include="ZXing.Net.Bindings.SkiaSharp" Version="0.16.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DccParser\DccParser.csproj" />
+  </ItemGroup>
+
+</Project>
